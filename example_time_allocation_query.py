@@ -13,14 +13,14 @@ import getpass
 import argparse
 
 
-def _query_available_time(args):
-    url = '{0:s}://{1:s}/observe/proposal/{2:s}/time_summary/'.format('https' if args.secure else 'http',
-                                                                      args.host,
-                                                                      args.proposal)
+def _query_available_time(query_arguments):
+    url = '{0:s}://{1:s}/observe/proposal/{2:s}/time_summary/'.format('https' if query_arguments.secure else 'http',
+                                                                      query_arguments.host,
+                                                                      query_arguments.proposal)
 
     print 'Using url %s' % url
 
-    credentials = {'username': args.user,
+    credentials = {'username': query_arguments.user,
                    'password': getpass.getpass(), }
 
     connection = urllib.urlopen(url, data=urllib.urlencode(credentials))
@@ -39,10 +39,10 @@ def _parse_response(response):
     return response
 
 
-def _print_telescope_class_summary(telescope_class, time_for_proposal):
-    print '%s time :-' % telescope_class
+def _print_telescope_class_summary(_telescope_class, _time_for_proposal):
+    print '%s time :-' % _telescope_class
     print
-    for key, value in time_for_proposal[telescope_class].iteritems():
+    for key, value in _time_for_proposal[_telescope_class].iteritems():
         print '{0:<30} {1}'.format(key, value)
 
     print
@@ -62,4 +62,3 @@ if __name__ == '__main__':
 
     for telescope_class in time_allocation[configuration_arguments.proposal].keys():
         _print_telescope_class_summary(telescope_class, time_allocation[configuration_arguments.proposal])
-
