@@ -14,7 +14,7 @@ import argparse
 
 
 def _query_available_time(query_arguments):
-    url = '{0:s}://{1:s}/observe/proposal/{2:s}/time_summary/'.format('https' if query_arguments.secure else 'http',
+    url = '{0:s}://{1:s}/observe/proposal/{2:s}/time_summary/'.format('http' if query_arguments.non_secure else 'https',
                                                                       query_arguments.host,
                                                                       query_arguments.proposal)
 
@@ -50,10 +50,10 @@ def _print_telescope_class_summary(_telescope_class, _time_for_proposal):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--host', default='scheduler-dev')
+    parser.add_argument('--host', default='lcogt.net')
     parser.add_argument('-u', '--user', default='mnorbury@lcogt.net')
     parser.add_argument('-p', '--proposal', default='LCOSchedulerTest')
-    parser.add_argument('-s', '--secure', action='store_true')
+    parser.add_argument('--non-secure', action='store_true')
     configuration_arguments = parser.parse_args()
 
     raw_response = _query_available_time(configuration_arguments)
