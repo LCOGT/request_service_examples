@@ -23,6 +23,8 @@ molecule = {
     'exposure_count'        : 10,  # The number of consecutive exposures
     'spectra_slit'          : 'slit_6.0as',  # The generic filter name
     # Optional fields. Defaults are as below.
+    # fill_window should be defined as True on a maximum of one molecule per request, or you should receive an error when scheduling
+    'fill_window'           : False # set to True to cause this molecule to fill its window (or all windows of a cadence) with exposures, calculating exposure_count for you
     'acquire_mode'          : 'Brightest',
     'acquire_radius_arcsec' : 4.3,
     'type'                  : 'SPECTRUM',  # The type of the molecule
