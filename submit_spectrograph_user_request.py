@@ -74,12 +74,20 @@ params = urllib.urlencode({'username': proposal['user_id'],
                            'request_data' : json_user_request})
 conn = httplib.HTTPSConnection("test.lcogt.net")
 conn.request("POST", "/observe/service/request/submit", params)
-response = conn.getresponse().read()
-print response
+conn_response = conn.getresponse()
+
+# The status can tell you if sending the request failed or not. 200 or 203 would mean success, 400 or anything else fail
+status_code = conn_response.status
+
+# If the status was a failure, the response text is a reason why it failed
+# If the status was a success, the response text is tracking number of the submitted request
+response = conn_response.read()
+
 response = json.loads(response)
 print response
 
-try:
-    print "http://test.lcogt.net/observe/request/" + response['id']
-except KeyError:
-    print response['error']
+if status_code == 200:
+    try:
+        print "http://lcogt.net/observe/request/" + response['id']
+    except KeyError:
+        print response['error']
