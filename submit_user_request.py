@@ -69,8 +69,9 @@ params = urllib.urlencode({'username': proposal['user_id'],
                            'password': proposal['password'],
                            'proposal': proposal['proposal_id'],
                            'request_data' : json_user_request})
+headers = {'Content-type': 'application/x-www-form-urlencoded'}
 conn = httplib.HTTPSConnection("lcogt.net")
-conn.request("POST", "/observe/service/request/submit", params)
+conn.request("POST", "/observe/service/request/submit", params, headers)
 conn_response = conn.getresponse()
 
 # The status can tell you if sending the request failed or not. 200 or 203 would mean success, 400 or anything else fail
