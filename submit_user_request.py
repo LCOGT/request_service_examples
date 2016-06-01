@@ -61,6 +61,8 @@ request = {
 user_request = {
     "operator" : "single",
     "requests" : [request],
+    # ipp_value is an optional field that acts as a multiplier to your proposal base priority.
+    "ipp_value": 1.0,
     "type" : "compound_request"
     }
 
