@@ -6,7 +6,7 @@ constraints = {'max_airmass' : 2.0}
 
 # this selects any telescope on the 1 meter network
 location = {
-            'telescope_class':'1m0',
+    'telescope_class':'1m0',
 }
 
 proposal = {

@@ -11,10 +11,10 @@ location = {
 }
 
 proposal = {
-            'proposal_id'   : 'LCOSchedulerTest',
-            'user_id'       : 'zwalker@lcogt.net',
-            'password'      : 'password',
-    }
+    'proposal_id'   : 'LCOSchedulerTest',
+    'user_id'       : 'zwalker@lcogt.net',
+    'password'      : 'password',
+}
 
 molecule = {
       # Required fields

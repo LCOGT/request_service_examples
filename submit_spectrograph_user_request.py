@@ -12,10 +12,10 @@ location = {
 }
 
 proposal = {
-            'proposal_id'   : 'LCOSchedulerTest',
-            'user_id'       : 'esaunders@lcogt.net',
-            'password'      : getpass.getpass(),
-    }
+    'proposal_id'   : 'LCOSchedulerTest',
+    'user_id'       : 'esaunders@lcogt.net',
+    'password'      : getpass.getpass(),
+}
 
 molecule = {
       # Required fields

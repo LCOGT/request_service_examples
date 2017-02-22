@@ -19,10 +19,10 @@ location = {
 # A valid proposal with time on the telescopes you are requesting on is necessary for all requests
 # Enter your odin user_id (email) and password in the script here
 proposal = {
-            'proposal_id'   : 'LCOSchedulerTest',
-            'user_id'       : 'user@lcogt.net',
-            'password'      : 'password',
-    }
+    'proposal_id'   : 'LCOSchedulerTest',
+    'user_id'       : 'user@lcogt.net',
+    'password'      : 'password',
+}
 
 # You can use this to set up a single User Request to perform several calibration molecules in order.
 molecule = {
