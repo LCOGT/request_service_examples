@@ -10,10 +10,6 @@ location = {
     # Required fields
     'telescope_class':'1m0',
 
-    # Optional Fields
-    'site'       : 'lsc',
-    'observatory': 'doma',
-    'telescope'  : '1m0a', # Should further specify the 'telescope_class'
 }
 
 # A valid proposal with time on the telescopes you are requesting on is necessary for all requests
@@ -31,7 +27,7 @@ molecule = {
     # This resolves to the main science camera on the scheduled resource. It must be a class.
     # Valid instrument classes: '1M0-SCICAM-SBIG', '1M0-SCICAM-SINISTRO', '2M0-FLOYDS-SCICAM', '2M0-SCICAM-SPECTRAL',
     # '2M0-SCICAM-MEROPE', '0M8-SCICAM-SBIG', '0M4-SCICAM-SBIG', '2M0-FLOYDS-AG'
-    'instrument_name' : '1M0-SCICAM-SBIG',
+    'instrument_name' : '1M0-SCICAM-SINISTRO',
 
     # Required for AUTO_FOCUS, ZERO_POINTING, DARK, STANDARD, EXPOSE, SPECTRUM molecules
     'exposure_time'   : 60.0,  # Exposure time, in secs

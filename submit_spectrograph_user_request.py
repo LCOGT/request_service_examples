@@ -3,12 +3,11 @@ import urllib
 import json
 import getpass
 
-constraints = {'max_airmass' : 3.0}
+constraints = {'max_airmass' : 1.6}
 
 # this selects any telescope on the 1 meter network
 location = {
             'telescope_class':'2m0',
-#            'site' : 'lsc'
 }
 
 proposal = {

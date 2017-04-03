@@ -2,7 +2,7 @@ import httplib
 import urllib
 import json
 
-constraints = {'max_airmass' : 2.0}
+constraints = {'max_airmass' : 1.6}
 
 # this selects any telescope on the 1 meter network
 location = {
