@@ -44,8 +44,8 @@ molecule = {
     'fill_window'     : False, # set to True to cause this molecule to fill its window (or all windows of a cadence) with exposures, calculating exposure_count for you
     'ag_name'         : '',  # '' to let it resolve; same as instrument_name for self-guiding
     'ag_mode'         : 'Optional',
-    'bin_x'           : 2,  # Your binning choice. Right now these need to be the same.
-    'bin_y'           : 2,
+    'bin_x'           : 1,  # Your binning choice. Right now these need to be the same.
+    'bin_y'           : 1,
     'defocus'         : 0.0  # Mechanism movement of M2, or how much focal plane has moved (mm)
     }
 

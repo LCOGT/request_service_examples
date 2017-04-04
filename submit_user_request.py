@@ -27,8 +27,8 @@ molecule = {
     'ag_name'         : '',  # '' to let it resolve; same as instrument_name for self-guiding
     'ag_mode'         : 'Optional',
     'instrument_name' : '1M0-SCICAM-SINISTRO',  # This resolves to the main science camera on the scheduled resource
-    'bin_x'           : 2,  # Your binning choice. Right now these need to be the same.
-    'bin_y'           : 2,
+    'bin_x'           : 1,  # Your binning choice. Right now these need to be the same.
+    'bin_y'           : 1,
     'defocus'         : 0.0  # Mechanism movement of M2, or how much focal plane has moved (mm)
     }
 

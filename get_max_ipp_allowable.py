@@ -44,8 +44,8 @@ molecule = {
     'instrument_name' : '1M0-SCICAM-SINISTRO',  # 1m:  Choose from '1M0-SCICAM-SBIG' or '1M0-SCICAM-SINISTRO'
                                             # 2m:  Choose from '2M0-FLOYDS-SCICAM', '2M0-SCICAM-SPECTRAL', '2M0-SCICAM-MEROPE'
                                             # 0m4: Choose '0M4-SCICAM-SBIG'
-    'bin_x'           : 2,  # Your binning choice. Right now these need to be the same.
-    'bin_y'           : 2,
+    'bin_x'           : 1,  # Your binning choice. Right now these need to be the same.
+    'bin_y'           : 1,
     'defocus'         : 0.0  # Mechanism movement of M2, or how much focal plane has moved (mm)
     }
 
