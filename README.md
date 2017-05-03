@@ -1,6 +1,6 @@
 # Observation API Examples
 
-This repository contains python scripts demonstrating the use of the [LCO Request API](https://observe.lco.global./api).
+This repository contains python scripts demonstrating the use of the [LCO Request API](https://observe.lco.global/api/).
 They may be used as a starting point for writing custom scripts for submitting/querying observations on the LCO
 network programatically.
 
@@ -17,7 +17,7 @@ Most (if not all) examples require the use of an authentication token. This toke
 it is used to authenticate you with the API and make sure you have permission to perform specific actions.
 This token is placed in the HTTP `Authorization` header and is valid forever (or until you revoke it).
 
-You can obtain your authentication token from your [profile page](https://observe.lco.globall/accounts/profile/)
+You can obtain your authentication token from your [profile page](https://observe.lco.global/accounts/profile/)
 on the observation portal.
 
 If for some reason you are unable to access your profile page (on a server without a graphical interface, for example)
