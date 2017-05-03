@@ -11,7 +11,7 @@ network programatically.
 The example scripts included here are basic. To view the full API documentation, please see the
 [LCO Developers Page](https://developers.lco.global).
 
-### Authenticaion
+### Authentication
 
 Most (if not all) examples require the use of an authentication token. This token is similar to a password:
 it is used to authenticate you with the API and make sure you have permission to perform specific actions.
