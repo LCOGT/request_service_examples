@@ -13,7 +13,7 @@ PROPOSAL_ID = 'FTPEPO2014A-004'  # Proposal IDs may be found here: https://obser
 
 # Use the requests library to make an HTTP request to the API
 response = requests.get(
-    'https://observe-beta.lco.global/api/userrequests?proposal={}'.format(PROPOSAL_ID),
+    'https://observe.lco.global/api/userrequests?proposal={}'.format(PROPOSAL_ID),
     headers={'Authorization': 'Token {}'.format(API_TOKEN)}
 )
 
@@ -29,6 +29,6 @@ for request in response.json()['results'][:5]:  # Get the first 5 UserRequests
     print('Request {0} status is {1}. Last updated: {2}'.format(
         request['group_id'], request['state'], request['modified']
     ))
-    print('https://observe-beta.lco.global/userrequests/{}/\n'.format(
+    print('https://observe.lco.global/userrequests/{}/\n'.format(
         request['id']
     ))

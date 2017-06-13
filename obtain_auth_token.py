@@ -10,7 +10,7 @@ You may also obtain your API key from your profile page: https://observe.lco.glo
 '''
 
 response = requests.post(
-    'https://observe-beta.lco.global/api/api-token-auth/',
+    'https://observe.lco.global/api/api-token-auth/',
     data={
         'username': 'username',
         'password': 'password'

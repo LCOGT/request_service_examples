@@ -67,7 +67,7 @@ userrequest = {
 
 # Now that we have a fully formed UserRequest, we can submit it to the api.
 response = requests.post(
-    'https://observe-beta.lco.global/api/userrequests/',
+    'https://observe.lco.global/api/userrequests/',
     headers={'Authorization': 'Token {}'.format(API_TOKEN)},
     json=userrequest  # Make sure you use json!
 )
@@ -82,4 +82,4 @@ except requests.exceptions.HTTPError as exc:
 userrequest_dict = response.json()  # The API will return the newly submitted userrequest as json
 
 # Print out the url on the portal where we can view the submitted request
-print('View this observing request: https://observe-beta.lco.global/userrequests/{}/'.format(userrequest_dict['id']))
+print('View this observing request: https://observe.lco.global/userrequests/{}/'.format(userrequest_dict['id']))

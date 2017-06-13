@@ -73,7 +73,7 @@ userrequest = {
 
 # Now that we have a fully formed UserRequest, we can submit it to the api.
 response = requests.post(
-    'https://observe-beta.lco.global/api/userrequests/max_allowable_ipp/',
+    'https://observe.lco.global/api/userrequests/max_allowable_ipp/',
     headers={'Authorization': 'Token {}'.format(API_TOKEN)},
     json=userrequest  # Make sure you use json!
 )

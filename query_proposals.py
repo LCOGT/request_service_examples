@@ -10,7 +10,7 @@ Return details about proposals you belong to, including time allocations.
 API_TOKEN = 'PlaceApiTokenHere'  # API token obtained from https://observe.lco.global/accounts/profile/
 
 response = requests.get(
-    'https://observe-beta.lco.global/api/proposals/',
+    'https://observe.lco.global/api/proposals/',
     headers={'Authorization': 'Token {}'.format(API_TOKEN)}
 )
 
