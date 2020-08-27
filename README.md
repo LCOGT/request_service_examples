@@ -1,7 +1,7 @@
 # Observation API Examples
 
 **THIS PROJECT IS DEPRECATED**
-**It has been replaced with [observation-portal-api-exaples](https://github.com/LCOGT/observation-portal-api-examples)**
+**It has been replaced with [observation-portal-api-examples](https://github.com/LCOGT/observation-portal-api-examples)**
 
 This repository contains python scripts demonstrating the use of the [LCO Request API](https://observe.lco.global/api/).
 They may be used as a starting point for writing custom scripts for submitting/querying observations on the LCO
